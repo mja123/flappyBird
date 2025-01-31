@@ -7,6 +7,7 @@ signal game_started
 @export var gravity = 900.0
 @export var jump_force: int = -300
 @onready var animation_player = $AnimationPlayer
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 var max_speed = 4000
 var rotation_speed = 2
@@ -27,7 +28,6 @@ func _physics_process(delta):
 		jump()
 		
 	if !is_started:
-		print("No started")
 		return
 	velocity.y += gravity * delta
 	
@@ -42,6 +42,7 @@ func _physics_process(delta):
 func jump():
 	velocity.y = jump_force
 	rotation = deg_to_rad(-30)
+	audio_stream_player_2d.play()
 			
 
 func rotate_bird():

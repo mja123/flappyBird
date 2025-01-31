@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d3t62bxcdnwj"]
+[gd_scene load_steps=7 format=3 uid="uid://d3t62bxcdnwj"]
 
 [ext_resource type="Script" path="res://Scripts/pipe_pair.gd" id="1_fgbj5"]
 [ext_resource type="Texture2D" uid="uid://drx10uoxjpba5" path="res://Assets/pipe-green.png" id="2_ej0xa"]
+[ext_resource type="AudioStream" uid="uid://dx8d62fb5xydt" path="res://Assets/712851__lewisitoo__sfx-success.ogg" id="3_to6c2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjuro"]
 size = Vector2(46, 477)
@@ -45,6 +46,9 @@ position = Vector2(45, 0)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scored"]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_1cady")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_to6c2")
 
 [connection signal="body_entered" from="TopPipe" to="." method="_on_body_entered"]
 [connection signal="body_entered" from="BottomPipe" to="." method="_on_body_entered"]

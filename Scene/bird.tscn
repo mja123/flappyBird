@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dtilpyyc3gkh2"]
+[gd_scene load_steps=10 format=3 uid="uid://dtilpyyc3gkh2"]
 
 [ext_resource type="Script" path="res://Scripts/bird.gd" id="1_ngkor"]
 [ext_resource type="Texture2D" uid="uid://bjn7mqbj3rrm" path="res://Assets/yellowbird-midflap.png" id="1_wejmr"]
 [ext_resource type="Texture2D" uid="uid://bxetx2w3gs4gr" path="res://Assets/yellowbird-downflap.png" id="3_hed3f"]
 [ext_resource type="Texture2D" uid="uid://cfmtmqos4atil" path="res://Assets/yellowbird-upflap.png" id="4_qjk42"]
+[ext_resource type="AudioStream" uid="uid://c24i5bar8460l" path="res://Assets/264828__cmdrobot__text-message-or-videogame-jump.ogg" id="5_xx1yq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q700l"]
 height = 28.0
@@ -64,3 +65,6 @@ shape = SubResource("CapsuleShape2D_q700l")
 libraries = {
 "": SubResource("AnimationLibrary_khapi")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_xx1yq")

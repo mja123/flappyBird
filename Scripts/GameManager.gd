@@ -23,9 +23,8 @@ func _ready():
 	pipe_spawner.point_scored.connect(point_scored)
 
 func on_game_started():
-	print("✅ game_started signal received!")
 	game_state = GameState.RUNNING
-	#pipe_spawner.start_spawning_pipes()
+	pipe_spawner.start_spawning_pipes()
 	
 func end_game():
 	if fade != null: 
