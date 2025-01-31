@@ -1,0 +1,7 @@
+res://Scene/bird.tscn
+res://Scripts/GameManager.gd
+res://Scene/main.tscn
+res://Scene/pipe_pair.tscn
+res://Scene/ground.tscn
+res://Scene/fade.tscn
+res://Scene/UI.tscn

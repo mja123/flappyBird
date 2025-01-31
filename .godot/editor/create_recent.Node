@@ -1,0 +1,14 @@
+CollisionShape2D
+Sprite2D
+MarginContainer
+Button
+VBoxContainer
+Panel
+TextureRect
+Area2D
+Label
+CanvasLayer
+AnimationPlayer
+ColorRect
+Node
+VisibleOnScreenNotifier2D
