@@ -26,6 +26,7 @@ func spawn_pipe():
 	
 	var viewport_rect = get_viewport().get_camera_2d().get_viewport_rect()
 	var half_height = viewport_rect.size.y / 2
+	
 	pipe.position.x = viewport_rect.end.x / 2
 	pipe.position.y = randf_range(viewport_rect.size.y * 0.15 - half_height, viewport_rect.size.y * 0.65 - half_height)
 	
