@@ -35,5 +35,8 @@ func end_game():
 	ui.on_game_over()
 
 func point_scored():
-	points += 1
+	points += 1 * 10
 	ui.update_points(points)
+	if points == 20:
+		#end_game()
+		ui.on_game_over()
